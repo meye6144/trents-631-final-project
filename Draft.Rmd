@@ -36,23 +36,23 @@ note: The numbers in the 2020 season are far lower than all of the other dataset
 
 
 ```{r}
-setwd("~/Desktop")
+#setwd("~/Desktop")
 library(tidyverse)
 library(readxl)
 
-Hitting_Stats_2015 <- read_excel("~/Desktop/Hitting_Stats_2015.xlsx", skip = 1)
+Hitting_Stats_2015 <- read_excel("Hitting_Stats_2015.xlsx", skip = 1)
 
-Hitting_Stats_2016 <- read_excel("~/Desktop/Hitting_Stats_2016.xlsx", skip = 1)
+Hitting_Stats_2016 <- read_excel("Hitting_Stats_2016.xlsx", skip = 1)
 
-Hitting_Stats_2017 <- read_excel("~/Desktop/Hitting_Stats_2017.xlsx", skip = 1)
+Hitting_Stats_2017 <- read_excel("Hitting_Stats_2017.xlsx", skip = 1)
 
-Hitting_Stats_2018 <- read_excel("~/Desktop/Hitting_Stats_2018.xlsx", skip = 1)
+Hitting_Stats_2018 <- read_excel("Hitting_Stats_2018.xlsx", skip = 1)
 
-Hitting_Stats_2019 <- read_excel("~/Desktop/Hitting_Stats_2019.xlsx", skip = 1)
+Hitting_Stats_2019 <- read_excel("Hitting_Stats_2019.xlsx", skip = 1)
 
-Hitting_Stats_2020 <- read_excel("~/Desktop/HittingStats2020.xlsx", skip = 1)
+Hitting_Stats_2020 <- read_excel("HittingStats2020.xlsx", skip = 1)
 
-Hitting_Stats_2021 <- read_excel("~/Desktop/HittingStats2021.xlsx", skip = 1)
+Hitting_Stats_2021 <- read_excel("HittingStats2021.xlsx", skip = 1)
 
 set.seed(12345)
 Sample_2015 <- Hitting_Stats_2015[sample(nrow(Hitting_Stats_2015), size=100), ]
